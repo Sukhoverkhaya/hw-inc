@@ -101,12 +101,14 @@ variable_text: [key1: "text1", key2: "text2", key3: "text3"]
 Поле ***units*** для этого элемента может содержать только значение Number и String.
 ```
 Пример создания такого элемента: 
-- {name: Sex,     text: "Пол:", guiStyle: "RadioButton", units: "String", variable_text: [  Male: "Мужчина",                                                                                                                                                       Female: "Женщина"]}
+- {name: Sex,     text: "Пол:", guiStyle: "RadioButton", units: "String", variable_text: [  Male: "Мужчина", 
+                                                                                            Female: "Женщина"]}
 ```
 - ***guiStyle: "CalcResult"*** - недоступное для редактирования поля для отображения результата расчета параметра по указанной формуле. Поле ***units*** для этого элемента может содержать только значение Number.
 Поле ***formula*** допустимо только для этого элемента и содержит формулу для расчета данногог параметра.
 ```
-Пример создания такого элемента: - {name: pcRRdiv, text: "% RR мин.: ", guiStyle: "CalcResult", units: "Number", formula: ((RRmax - RRmin) / RRmean)*100}
+Пример создания такого элемента: 
+- {name: pcRRdiv, text: "% RR мин.: ", guiStyle: "CalcResult", units: "Number", formula: ((RRmax - RRmin) / RRmean)*100}
 ```
 **Правила заполнения поля ***formula***:**
 * Формула может содержать только операторы +, -, /, *, ^ и скобки () (извлечение квадратного корня аналогично возведению в степень 0.5, поэтому может быть записано как 4 ^ 0.5 или 4 ^ (1/2)).
