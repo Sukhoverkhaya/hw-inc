@@ -1,6 +1,25 @@
 # Инструкция по использованию конструктора заключений "ECG-helper V.2"
 
-** Содержание:
+**Содержание:**
+* [Интерфейс](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81)
+  * [Меню выбора](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BC%D0%B5%D0%BD%D1%8E-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%B0)
+  * [Выбор фраз](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D1%84%D1%80%D0%B0%D0%B7)
+  * [Заключение](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5)
+* [Правила работы с редактируемыми файлами](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D1%8B%D0%BC%D0%B8-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%D0%BC%D0%B8)
+  * [Правила оформления файла с диагнозами и ограничениями phrase-src.yaml](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-%D1%81-%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%D0%B0%D0%BC%D0%B8-%D0%B8-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8-phrase-srcyaml)
+  * [Правила оформления файла с конфигурации param_list.yaml](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-%D1%81-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D0%B8-param_listyaml)
+  * [Правила оформления файла с нормативными таблицами NormTables.txt](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-%D1%81-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%BC%D0%B8-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%D0%BC%D0%B8-normtablestxt)
+* [Примеры наиболее частых сценариев использования редактируемых файлов](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D0%BD%D0%B0%D0%B8%D0%B1%D0%BE%D0%BB%D0%B5%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D1%8B%D1%85-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B5%D0%B2-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D1%8B%D1%85-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2)
+  * [Фраза отобразилась, когда не должна была](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D1%84%D1%80%D0%B0%D0%B7%D0%B0-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%BB%D0%B0%D1%81%D1%8C-%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%BD%D0%B5-%D0%B4%D0%BE%D0%BB%D0%B6%D0%BD%D0%B0-%D0%B1%D1%8B%D0%BB%D0%B0)
+  * [Фраза не отобразилась, когда должна была](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D1%84%D1%80%D0%B0%D0%B7%D0%B0-%D0%BD%D0%B5-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%BB%D0%B0%D1%81%D1%8C-%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%B4%D0%BE%D0%BB%D0%B6%D0%BD%D0%B0-%D0%B1%D1%8B%D0%BB%D0%B0)
+  * [Фраза подсветилась, когда не должна была](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D1%84%D1%80%D0%B0%D0%B7%D0%B0-%D0%BF%D0%BE%D0%B4%D1%81%D0%B2%D0%B5%D1%82%D0%B8%D0%BB%D0%B0%D1%81%D1%8C-%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%BD%D0%B5-%D0%B4%D0%BE%D0%BB%D0%B6%D0%BD%D0%B0-%D0%B1%D1%8B%D0%BB%D0%B0)
+  * [Фраза не подсветилась, когда должна была](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D1%84%D1%80%D0%B0%D0%B7%D0%B0-%D0%BD%D0%B5-%D0%BF%D0%BE%D0%B4%D1%81%D0%B2%D0%B5%D1%82%D0%B8%D0%BB%D0%B0%D1%81%D1%8C-%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%B4%D0%BE%D0%BB%D0%B6%D0%BD%D0%B0-%D0%B1%D1%8B%D0%BB%D0%B0)
+  * [Нужно добавить новый раздел и/или новую фразу](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%D0%B8%D0%B8%D0%BB%D0%B8-%D0%BD%D0%BE%D0%B2%D1%83%D1%8E-%D1%84%D1%80%D0%B0%D0%B7%D1%83)
+  * [Результат расчёта по формуле неверен / нужно изменить формулу расчёта параметра)](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D1%83-%D1%80%D0%B0%D1%81%D1%81%D1%87%D0%B5%D1%82%D0%B0-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0)
+  * [Нужно изменить порядок расположения параметров в разделе их ввода](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA-%D1%80%D0%B0%D1%81%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-%D0%B2-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5-%D0%B8%D1%85-%D0%B2%D0%B2%D0%BE%D0%B4%D0%B0)
+  * [Нужно добавить новый параметр для ввода](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80-%D0%B4%D0%BB%D1%8F-%D0%B2%D0%B2%D0%BE%D0%B4%D0%B0)
+  * [Нужно добавить новую нормативную таблицу](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BD%D0%BE%D0%B2%D1%83%D1%8E-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%83%D1%8E-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%83)
+  * [Нужно удалить нормативную таблицу](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%83%D1%8E-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%83)
 
 ## Интерфейс
 
@@ -455,7 +474,7 @@ Age;	Bradi;	Norm;	Tachi
 2. Взять ключи (содержимое поля **name**) всех параметров, которые будут использованы в таблице. Если нужные параметры ещё не были определены - сделать новые записи для них в `param_list.yaml` по всем [правилам офорления файла конфигурации]().
 3. Открыть файл `NormTables.txt` и с использованием ключей, полученных на шаге 1, построить новую таблицу по всем [правилам оформления нормативных таблиц]().
 
-## Нужно удалить нормативную таблицу
+### Нужно удалить нормативную таблицу
 
 Любая нормативная таблица строится для оценки какого-то из вводимых (или рассчитываемых по введённым) параметров. Чтобы прекратить оценку параметра по нормативной таблице (если параметр более не будет использоваться или для него не нужна нормативная таблица), запись о таблице нужно удалить из файла `NormTables.txt`:
 1. В файле `param_list.yaml` по содержимому поля ***text*** ищем параметр, таблицу для которого нужно удалить.
