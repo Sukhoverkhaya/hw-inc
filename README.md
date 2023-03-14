@@ -20,7 +20,7 @@
   * [Нужно добавить новый параметр для ввода](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80-%D0%B4%D0%BB%D1%8F-%D0%B2%D0%B2%D0%BE%D0%B4%D0%B0)
   * [Нужно добавить новую нормативную таблицу](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BD%D0%BE%D0%B2%D1%83%D1%8E-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%83%D1%8E-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%83)
   * [Нужно удалить нормативную таблицу](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%83%D1%8E-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%83)
-
+#__________________________________________________________________________________________________________________
 ## Интерфейс
 
 Открыв приложение, пользователь видит три окна: ***"Меню выбора"***, ***"Выбор фраз"*** и ***"Заключение"***. 
@@ -324,7 +324,7 @@ ________
 
 ### Фраза отобразилась, когда не должна была
 
-Для работы понадобится знание об устройсве файлов [`phrase-src.yaml`](), [`param_list.yaml`]() и [`NormTables.txt`]().
+Для работы понадобится знание об устройсве файлов [`phrase-src.yaml`](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-%D1%81-%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%D0%B0%D0%BC%D0%B8-%D0%B8-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8-phrase-srcyaml), [`param_list.yaml`](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-%D1%81-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D0%B8-param_listyaml) и [`NormTables.txt`](https://github.com/Sukhoverkhaya/hw-inc/blob/main/README.md#%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-%D1%81-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%BC%D0%B8-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%D0%BC%D0%B8-normtablestxt).
 
 Единственный способ скрывать фразу из меню выбора при каких-то условиях - добавить в поле ***self-bans*** этой фразы ключи, активирующиеся в этих условиях. Таким образом, если фраза отображается, когда не должна, нужно либо изменить содержимое её поля ***self-bans***, либо изменить условия активации ключей, содержащихся в этом поле.
 
@@ -439,7 +439,7 @@ Age;	Bradi;	Norm;	Tachi
 1. Открываем файл `param_list.yaml` и ищем параметр, имя которого хотим изменить (поиск производится по содержимому поля ***text***).
 2. Заменяем содержимое поля ***text*** на то, которое хотим видеть в приложении.
 
-### Нужно изменить формулу рассчета параметра
+### Результат расчёта по формуле неверен / нужно изменить формулу расчёта параметра)
 
 Для работы понадобится знание об устройсве файла [`param_list.yaml`]().
 
